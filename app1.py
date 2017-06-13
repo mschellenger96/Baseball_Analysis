@@ -13,18 +13,38 @@ categories = []
 for cat in row.keys():
 	categories.append(cat)
 
-babip = []
-exit_velo = []
+
 ba = []
+iso = []
+babip = []
+slg = []
+woba = []
+xwoba = []
+xba = []
+hits = []
+launch_speed = []
+launch_angle = []
+spin_rate = []
+velocity = []
+effective_speed = []
+whiffs = []
+swings = []
+takes = []
+
+totals = dict((name, eval(name)) for name in ['ba', 'iso', 'babip', 'slg', 'woba', 'xwoba', 'xba', 'hits', 'launch_speed', 'launch_angle', 'spin_rate',
+	'velocity', 'effective_speed', 'whiffs', 'swings', 'takes'])
+
 
 for player, statistics in results.items():
-	babip.append(float(statistics['babip']))
-	exit_velo.append(float(statistics['launch_speed']))
-	ba.append(float(statistics['ba']))
+	for cat, val in totals.items():
+		val.append(float(statistics[cat]))
 
-babip = np.array(babip)
-exit_velo = np.array(exit_velo)
+for total in totals.values():
+	total = np.array(total)
 
-slope, intercept, r_value, p_value, std_err = stats.linregress(exit_velo, ba)
+print(totals['launch_speed'])
 
-print("r_squared: ", r_value**2)
+
+for cat, total in totals.items():
+	slope, intercept, r_value, p_value, std_err = stats.linregress(totals['launch_speed'], totals[cat])
+	print("r_squared " + cat + ": ", r_value**2)
