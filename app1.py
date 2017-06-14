@@ -31,8 +31,8 @@ whiffs = []
 swings = []
 takes = []
 
-totals = dict((name, eval(name)) for name in ['ba', 'iso', 'babip', 'slg', 'woba', 'xwoba', 'xba', 'hits', 'launch_speed', 'launch_angle', 'spin_rate',
-	'velocity', 'effective_speed', 'whiffs', 'swings', 'takes'])
+totals = dict((name, eval(name)) for name in ['ba', 'iso', 'babip', 'slg', 'woba', 'xwoba', 'xba', 'hits', 
+	'launch_speed', 'launch_angle', 'spin_rate', 'velocity', 'effective_speed', 'whiffs', 'swings', 'takes'])
 
 
 for player, statistics in results.items():

@@ -2,10 +2,10 @@ Major League Baseball Analysis Project
 ---------------------------------------
 
 Following is a description of my analysis of results from the 2016 season.
+App1 was a mini "project" to answer a question I had for a long time: does how hard you hit the ball on average correlate to your batting average? The purpose of this program was more to familiarize myself with some of the csv import tools and reading in data. App2 is the larger and more detailed project.
 
 
-
-App1:
+App1 (aka HelloWorlding):
 	
 	Data is from right handed hitters vs right handed pitchers with min. 200 PA from the 2016 season.
 	- Does exit velocity correlate with other outcome statistics?
@@ -28,13 +28,8 @@ App1:
 
 	Exit Velocity is weakly correlated with slugging and xba, which makes intuitive sense, interesting that it is not strongly correlated with any other stats.
 
-App2:
 
-	- Use historic data from players to predict the win total for the American League East.
-			-Add functionality for trades?
-
-
-App3 (long term project):
+App2 (long term project):
 
 	- Use statcast data to find good hitting matchups.
 		- Given a player, find the pitches he has the most succes with. (what stat to use? hit probability?)
