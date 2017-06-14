@@ -34,7 +34,7 @@ App2:
 
 
 App3 (long term project):
-#########################		
+##########################		
 	- Use statcast data to find good hitting matchups.
 		- Given a player, find the pitches he has the most succes with. (what stat to use? hit probability?)
 		- Given the pitch with most succes, find a pitcher with pitch most similar to that.
