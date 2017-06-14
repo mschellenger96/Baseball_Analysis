@@ -3,10 +3,10 @@ Major League Baseball Analysis Project
 
 Following is a description of my analysis of results from the 2016 season.
 
-All data is from right handed hitters vs right handed pitchers with min. 200 PA from the 2016 season.
+
 
 App1:
-######
+	Data is from right handed hitters vs right handed pitchers with min. 200 PA from the 2016 season.
 	- Does exit velocity correlate with other outcome statistics?
 			-r_squared woba:  0.193797297198
 			-r_squared xwoba:  0.436675012661
@@ -28,13 +28,13 @@ App1:
 	Exit Velocity is weakly correlated with slugging and xba, which makes intuitive sense, interesting that it is not strongly correlated with any other stats.
 
 App2:
-######
+
 	- Use historic data from players to predict the win total for the American League East.
 			-Add functionality for trades?
 
 
 App3 (long term project):
-##########################		
+
 	- Use statcast data to find good hitting matchups.
 		- Given a player, find the pitches he has the most succes with. (what stat to use? hit probability?)
 		- Given the pitch with most succes, find a pitcher with pitch most similar to that.
